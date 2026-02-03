@@ -1,0 +1,138 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+}
+.bu{
+    text-decoration: none;
+}
+
+.con {
+    display: flex;
+    height: 100vh;
+}
+.ic{
+    height: 60px;
+    width: 60px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.left h1 {
+    font-size: 32px;
+    max-width: 450px;
+    line-height: 1.2;
+}
+
+.left h1 span {
+    background: linear-gradient(to right, orange, magenta);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.image-placeholder {
+    width: 250px;
+    height: 400px;
+    background: #f0f0f0;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    margin-top: 20px;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #dbdbdb;
+}
+
+.login-card {
+    width: 350px;
+    padding: 30px;
+    text-align: center;
+}
+
+.title {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #dbdbdb;
+    background: #fafafa;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.login {
+    width: 100%;
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.for {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #00376b;
+    text-decoration: none;
+}
+
+.divider {
+    height: 1px;
+    background: #dbdbdb;
+    margin: 35px 0;
+}
+.divider2{
+    height: 1px;
+    background: #dbdbdb ;
+    margin: 15px 0;
+    
+}
+
+.btn{
+    width: 100%;
+    margin-top: 10px;
+    background: none;
+    border: 1px solid #0095f6;
+    color: #0095f6;
+    padding: 10px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.home{
+    width: 500px;
+    height: 500px;
+}
+.down{
+    margin-left: 30px;
+    margin-bottom: 60px;
+    text-decoration: none;
+}

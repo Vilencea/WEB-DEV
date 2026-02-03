@@ -1,0 +1,223 @@
+
+:root {
+    --color-text-primary: #1F2328;
+    --color-text-secondary: #636C76;
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #f6f8fa;
+    --color-border: #d0d7de;
+    --color-accent: #0969da;
+    --color-btn-primary-bg: #1F2328;
+    --color-btn-primary-text: #ffffff;
+    --color-btn-hover: #32383f;
+    --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-stack);
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    line-height: 1.5;
+    padding: 40px 20px;
+}
+
+.text-center { text-align: center; }
+.text-secondary { color: var(--color-text-secondary); }
+
+.up{
+    display: flex;
+}
+.menu {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  list-style: none;
+  width: 200px;
+}
+.dropdown{
+    margin-right: 25px;
+    margin-bottom: 35px;
+    font-size: 13px;
+}
+.h1-l { 
+    font-size: 48px; 
+    font-weight: 700; 
+    letter-spacing: -1px; 
+    margin-bottom: 16px; 
+}
+
+.h3-title { 
+    font-size: 24px; 
+    font-weight: 600; 
+    margin-bottom: 8px; 
+}
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.hero{
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-s{
+    font-size: 20px;
+    color: var(--color-text-secondary);
+    max-width: 700px;
+    margin-bottom: 32px;
+}
+
+.pricing-grid {
+    display: flex;
+    gap: 32px; 
+    justify-content: center;
+    align-items: stretch; 
+}
+
+.card {
+    background: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 32px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 280px; 
+}
+
+.card.enterprise {
+    border: 2px solid var(--color-accent);
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-accent);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.price-block {
+    margin: 24px 0;
+    display: flex;
+    align-items: baseline;
+}
+
+.currency {
+    font-size: 24px;
+    vertical-align: top;
+    margin-right: 2px;
+}
+
+.amount {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.unit {
+    color: var(--color-text-secondary);
+    margin-left: 4px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+    text-align: center;
+    width: 100%;
+}
+
+.btn-pri {
+    background-color: var(--color-btn-primary-bg);
+    color: var(--color-btn-primary-text);
+    border: 1px solid transparent;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-btn-hover);
+}
+
+.btn-out {
+    background-color: transparent;
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border);
+}
+
+.btn-out:hover {
+    border-color: var(--color-text-primary);
+    background-color: var(--color-bg-secondary);
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px; 
+}
+
+.hero-btn {
+    width: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.feature-list {
+    list-style: none;
+    margin-top: 32px;
+    flex-grow: 1; 
+}
+
+.feature-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--color-text-primary);
+}
+
+.check-icon {
+    margin-right: 12px;
+    color: var(--color-text-primary); 
+    flex-shrink: 0;
+}
+
+.feature-link {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+.feature-link:hover { text-decoration: underline; }
+
+@media (max-width: 900px) {
+    .pricing-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .h1-large { font-size: 32px; }
+}
